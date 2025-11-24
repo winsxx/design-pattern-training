@@ -1,0 +1,66 @@
+# Java / build files
+# =========================
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Build output directories
+/target/
+/build/
+/out/
+/dist/
+/bin/
+
+# Gradle
+.gradle/
+**/build/
+gradle-app.setting
+gradle-app.setting
+
+# Maven
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ / JetBrains
+# --------------------
+/.idea/
+*.iws
+*.iml
+*.ipr
+
+# VS Code
+# --------------------
+.vscode/
+*.code-workspace
+
+# Eclipse (optional common files)
+.project
+.classpath
+.settings/
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment / local configs
+.env
+*.env
+
+# Other common excludes
+*.swp
+*.swo
+*.tmp
+.idea_modules/
