@@ -1,4 +1,4 @@
-package tasks.notification.solution;
+package tasks.notification.solution.subscriber;
 
 // ==========================================
 // PATTERN 2: OBSERVER

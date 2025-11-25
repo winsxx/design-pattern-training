@@ -2,6 +2,12 @@ package tasks.notification.solution;
 
 import java.util.List;
 
+import tasks.notification.solution.formatter.JsonFormatter;
+import tasks.notification.solution.formatter.TextFormatter;
+import tasks.notification.solution.subscriber.DiskLogSubscriber;
+import tasks.notification.solution.subscriber.EmailSubscriber;
+import tasks.notification.solution.subscriber.SmsSubscriber;
+
 // ==========================================
 // FACTORY (Helper to wire it up easily)
 // ==========================================

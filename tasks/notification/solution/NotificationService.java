@@ -3,6 +3,9 @@ package tasks.notification.solution;
 import java.util.ArrayList;
 import java.util.List;
 
+import tasks.notification.solution.formatter.FormattingStrategy;
+import tasks.notification.solution.subscriber.Subscriber;
+
 // ==========================================
 // CONTEXT (The Publisher)
 // ==========================================

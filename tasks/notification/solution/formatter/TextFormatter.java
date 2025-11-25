@@ -1,4 +1,4 @@
-package tasks.notification.solution;
+package tasks.notification.solution.formatter;
 
 import java.time.LocalDateTime;
 

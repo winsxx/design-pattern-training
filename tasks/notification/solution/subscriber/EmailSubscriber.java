@@ -1,4 +1,4 @@
-package tasks.notification.solution;
+package tasks.notification.solution.subscriber;
 
 import java.util.List;
 
