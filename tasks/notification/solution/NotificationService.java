@@ -3,12 +3,39 @@ package tasks.notification.solution;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NotificationService {
+import tasks.notification.solution.formatter.FormattingStrategy;
+import tasks.notification.solution.subscriber.Subscriber;
 
-  // Implement
+// ==========================================
+// CONTEXT (The Publisher)
+// ==========================================
+
+public class NotificationService {
+  private List<Subscriber> subscribers = new ArrayList<>();
+  private FormattingStrategy formatter;
+
+  public void setStrategy(FormattingStrategy formatter) {
+    this.formatter = formatter;
+  }
+
+  public void attach(Subscriber subscriber) {
+    this.subscribers.add(subscriber);
+  }
 
   public List<String> notify(String message, String severity) {
-    // Implement
-    return new ArrayList<>();
+    if (formatter == null) {
+      throw new IllegalStateException("No formatting strategy set");
+    }
+
+    String formattedMsg = formatter.format(message, severity);
+    List<String> results = new ArrayList<>();
+
+    for (Subscriber sub : subscribers) {
+      String res = sub.update(formattedMsg, severity);
+      if (res != null) {
+        results.add(res);
+      }
+    }
+    return results;
   }
 }
